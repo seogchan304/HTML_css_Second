@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백</title>
+     <style>
+        /* margin : 외부 여백 */
+        /* padding : 내부 여백 */
+        div{
+            background: skyblue;
+            margin: 16px;  /* 외부 여백 : 바깥 공간을 확보 */
+            padding: 8px;  /* 내부 여백 : 안쪽 공간을 확보 */
+            margin-top: 60px;  /* 위쪽으로만 여백 */
+        }
+       .outer-box{
+        width: 250px;
+        height: 250px;
+        background: blue;
+        border: 4px solid lightblue;
+       }
+
+       .inner-box{
+        width: 125px;
+        height: 125px;
+        background: aqua;
+        border-radius: 25%;
+       }
+     </style>
+</head>
+<body>
+    <!-- 상자 안에 상자, 테두리 적용, 둥글게 -->
+     <div class="out outer-box">
+        <div class="inner-box">
+            박스
+        </div>
+     </div>
+
+     <div>
+        박스2
+     </div>
+
+     <div>
+        박스3
+     </div>
+</body>
+</html>
