@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 8px solid black;
+        }
+
+        @media(max-width:575x){
+            .container{
+                flex-wrap: wrap;
+            }
+            .box{
+                width: 50vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="flex-box"></div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

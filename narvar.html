@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework</title>
+  <style>
+    body {
+      background-color: #418597;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px; /* 좌우 여백 */
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu div {
+      cursor: pointer;
+    }
+
+    .main {
+      margin-top: 100px;
+    }
+
+    .main h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .main p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background-color: #cbd330;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b6bd2c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo">Bootdey.com</div>
+      <div class="menu">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Services</div>
+        <div>Portfolio</div>
+        <div>Contact</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Bootstrap 4 Navbar</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex. Etiam elementum lectus et tempor molestie.</p>
+      <button class="btn">Learn More</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+
+        @media(max-width:800px){
+
+        
+        .container{
+            width: 100vw;
+           
+        }
+
+        .flex-box{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .box{
+            width: min(350px, 100%);
+            min-width: 350px;
+            min-height: 350px;
+            text-align: center;
+            background: #0071FF;
+        }
+    }    
+        @media(max-width:800px){
+            .container{
+                width: 100vw;
+            }
+            .flex-box{
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20;
+            }
+            .box{
+
+                width: (350px, 48vw);
+                min-width: 0vw;
+                color: red;
+            }
+        }
+
+        @media(max-width:575px){
+            .box{
+                color: green;
+                width: 1008vw;
+                min-height: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="flex-box"></div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <h2>제목</h2>
+                <p>본문글</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
